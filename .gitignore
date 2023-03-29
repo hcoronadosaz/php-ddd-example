@@ -2,6 +2,7 @@
 /.env.*.local
 
 /apps/*/*/var/
+/apps/*/*/vendor/
 
 /apps/*/*/build/
 !/apps/*/*/build/supervisor/.gitkeep
@@ -12,3 +13,9 @@
 /build
 
 .php-cs-fixer.cache
+
+###> PhpStorm ###
+.DS_Store
+/.idea
+/.run
+###< PhpStorm ###
