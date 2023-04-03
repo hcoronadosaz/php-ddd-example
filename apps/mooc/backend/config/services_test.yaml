@@ -11,4 +11,5 @@ services:
 
   # Instance selector
   CodelyTv\Shared\Domain\RandomNumberGenerator: '@CodelyTv\Tests\Shared\Infrastructure\ConstantRandomNumberGenerator'
+  CodelyTv\Shared\Domain\DateTimeGenerator: '@CodelyTv\Tests\Shared\Infrastructure\ConstantDateTimeGenerator'
 #  CodelyTv\Shared\Domain\Bus\Event\EventBus: '@CodelyTv\Shared\Infrastructure\Bus\Event\InMemory\InMemorySymfonyEventBus'

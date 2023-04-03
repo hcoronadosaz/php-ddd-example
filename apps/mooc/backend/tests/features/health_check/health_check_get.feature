@@ -9,6 +9,7 @@ Feature: Api status
     """
     {
       "mooc-backend": "ok",
-      "rand": 1
+      "rand": 1,
+      "time": "2023-03-29 16:40:00"
     }
     """
