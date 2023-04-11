@@ -1,0 +1,4 @@
+create-user:
+  path: /users/{id}
+  controller: CodelyTv\Apps\Mooc\Backend\Controller\Users\UsersPutController
+  methods: [PUT]
