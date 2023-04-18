@@ -8,7 +8,8 @@ Feature: Create a new user
     """
     {
       "name": "John",
-      "email": "johnlemon@email.com"
+      "email": "johnlemon@email.com",
+      "password": "Abcd1234!"
     }
     """
     Then the response status code should be 201

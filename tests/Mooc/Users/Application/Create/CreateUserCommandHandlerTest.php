@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace CodelyTv\Tests\Mooc\Users\Application\Create;
 
 use CodelyTv\Mooc\Courses\Application\Create\CreateCourseCommandHandler;
@@ -23,6 +25,7 @@ class CreateUserCommandHandlerTest extends UsersModuleUnitTestCase
         $this->handler = new CreateUserCommandHandler(new UserCreator($this->repository(), $this->eventBus()));
     }
 
+    /** @test */
     public function it_should_create_a_valid_user(): void
     {
         $command = CreateUserCommandMother::create();

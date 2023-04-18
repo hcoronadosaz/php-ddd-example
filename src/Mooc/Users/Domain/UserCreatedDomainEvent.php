@@ -12,6 +12,7 @@ class UserCreatedDomainEvent extends DomainEvent
         string $id,
         private readonly string $name,
         private readonly string $email,
+        private readonly string $password,
         string $eventId = null,
         string $occurredOn = null
     ) {
@@ -24,7 +25,7 @@ class UserCreatedDomainEvent extends DomainEvent
         string $eventId,
         string $occurredOn
     ): DomainEvent {
-        return new self($aggregateId, $body['name'], $body['email'], $eventId, $occurredOn);
+        return new self($aggregateId, $body['name'], $body['email'], $body['password'], $eventId, $occurredOn);
     }
 
     public static function eventName(): string
@@ -37,6 +38,7 @@ class UserCreatedDomainEvent extends DomainEvent
         return [
             'name' => $this->name,
             'email' => $this->email,
+            'password' => $this->password,
         ];
     }
 
@@ -48,5 +50,10 @@ class UserCreatedDomainEvent extends DomainEvent
     public function email(): string
     {
         return $this->email;
+    }
+
+    public function password(): string
+    {
+        return $this->password;
     }
 }

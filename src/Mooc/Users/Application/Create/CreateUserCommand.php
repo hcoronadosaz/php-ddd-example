@@ -11,7 +11,8 @@ final class CreateUserCommand implements Command
     public function __construct(
         private readonly string $id,
         private readonly string $name,
-        private readonly string $email
+        private readonly string $email,
+        private readonly string $password
     ) {
     }
 
@@ -28,5 +29,10 @@ final class CreateUserCommand implements Command
     public function email(): string
     {
         return $this->email;
+    }
+
+    public function password(): string
+    {
+        return $this->password;
     }
 }

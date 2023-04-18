@@ -9,6 +9,6 @@
 
         <embedded name="name" class="CodelyTv\Mooc\Users\Domain\UserName" use-column-prefix="false" />
         <embedded name="email" class="CodelyTv\Mooc\Users\Domain\UserEmail" use-column-prefix="false" />
+        <embedded name="password" class="CodelyTv\Mooc\Users\Domain\UserPassword" use-column-prefix="false" />
     </entity>
-
 </doctrine-mapping>

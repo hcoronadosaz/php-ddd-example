@@ -7,5 +7,4 @@
     <embeddable name="CodelyTv\Mooc\Users\Domain\UserEmail">
         <field name="value" type="string" column="email" />
     </embeddable>
-
 </doctrine-mapping>
